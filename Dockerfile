@@ -2,6 +2,7 @@ FROM jupyter/scipy-notebook
 
 RUN pip install joblib
 
+USER root 
 
 RUN apt-get update && apt-get install -y jq
 
